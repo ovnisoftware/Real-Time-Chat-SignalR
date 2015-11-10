@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="Scripts/ChatApp.js"></script>
+</head>
+<body>
+    <!--Stores userName-->
+    <input type="hidden" id="userName" />
+
+    <!--Stores userId-->
+    <input type="hidden" id="userId" />
+
+    <div id="divLogin" class="login">
+        <div>
+            Your Name:<br />
+            <input id="txtNickName" type="text" class="textBox" />
+        </div>
+        <div id="divButton">
+            <input id="btnStartChat" type="button" class="submitButton" value="Start Chat" />
+        </div>
+    </div>
+
+    <div class="chat_box">
+        <div class="chat_head">Chat Box</div>
+        <div class="chat_body">
+            <!--<div class="user"></div>-->
+        </div>
+    </div>
+    <div class="msg_box" style="right:290px">
+        <div class="msg_head">
+            <div class="close">x</div>
+        </div>
+        <div class="msg_wrap">
+            <div class="msg_body"></div>
+            <div class="msg_footer"><textarea class="msg_input" rows="4"></textarea></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(".chat_box").draggable();
+    $('.msg_box').draggable();
+
+    $('.chat_head').dblclick(function () {
+        $('.chat_body').slideToggle('slow');
+    });
+
+    //$('.msg_head').click(function () {
+    //    $('.msg_wrap').slideToggle('slow');
+    //});
+
+    $('.close').click(function () {
+        $('.msg_box').hide();
+    });
+</script>
