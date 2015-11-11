@@ -7,7 +7,7 @@ http://ovnisoftware.com/Chat.html
 
 Features:
 - When a user enters a message it is broadcast to all other users currently signed on.
-- Chat box and message box can both be moved around the screen.
+- Chat box can be moved around the screen.
 - Chat can not be accessed until a name is entered via login popup.
 - Chat box can be minimized or maximized by double clicking the 'chat box' div in orange.
 - Message box can be closed by clicking x.
