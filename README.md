@@ -14,4 +14,12 @@ Features:
 - Message box can be reopened by clicking on user's name in Chat box.
 - Caches previous 100 messages and loads them when someone joins room (not enabled by default)
 
-Let me know if you have any ideas to improve it.
+Thanks to PacketCode for the HTML, CSS and JQuery!  I tweaked it some but the general layout is their idea.
+
+You can see how they built the UI here:
+
+https://www.youtube.com/playlist?list=PLNeMoaZ9VHP9zQd08bOnxZYdAyTS5e-r6
+
+Code is here:
+
+https://github.com/shaadomanthra/facebook-like-chat
